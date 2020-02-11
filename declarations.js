@@ -1,0 +1,23 @@
+/*Declaration of query selectors, flags and the counts*/ 
+const countriesDislay = document.querySelector('.coutries-container')
+const noOfCount = document.querySelector('.no-of-count')
+noOfCount.textContent = countries.length
+const totalCountries = document.querySelector('#number')
+const divError = document.querySelector('.error-message')
+const inputSearch = document.querySelector('.country-search')
+const popButton = document.querySelector('.population')
+const langButton = document.querySelector('.languages')
+const feedBack = document.querySelector('.feedback')
+const graphWrapper = document.querySelector('.graph-wrapper')
+const statButtons = document.querySelector('.stat-buttons')
+const populationIcon = document.querySelector('.population-icon')
+const searchMessage = document.querySelector('.search-message')
+const nameButton = document.querySelector('.name-button')
+const capitalButton = document.querySelector('.capital-button')
+const populationButton = document.querySelector('.population-button')
+const arrowUp = document.querySelector('.arrow-up')
+const sortButtons = document.querySelector('.sort-buttons')
+let nameClicked = 0
+let populationClicked = 0
+let capitalClicked = 0
+let total = 0

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Countries Data</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="container">
+    <header id="countries">
+        <h2 class="heading">World Countries Data</h2>
+        <h4 class="subtitle">Currently we have <span class="no-of-count"></span> countries</h4>
+        <h4 class="search-message"> <span id="number"></span> countries satisfied the search criteria</h4> 
+    </header> 
+    <div class="search" id="search">   
+        <input type="text" id="country-search" class="country-search" placeholder="Search countries by name, city and languages">
+    <div class="search-buttons">
+        <div class="sort-buttons">
+            <button class="name-button" value="Name">Name</button>
+            <button class="capital-button" value="Capital">Capital</button>
+            <button class="population-button" value="Population">Population</button>
+        </div> 
+        <button class="population-icon" value="population-icon">
+            <a href="#stat">
+               <i class="far fa-chart-bar"></i>
+           </a>
+           </button>
+        </div>   
+        <div class="error-message"></div>
+        
+    </div>
+    <main>
+        <div class="wrapper">
+            
+
+            <div class="coutries-container"> 
+            </div>
+
+            <div class="statistics-container" id="statistics-container">  
+                <div class="stat-buttons" id="stat-buttons">
+                    <button class="population" value="population">Population</button>
+                    <button class="languages" value="languages">Languages</button>
+                </div>
+                <h4 class="feedback">World Population</h4>
+                <div class="graphs">
+                    <div class="graph-wrapper" id="stat">
+                    </div>
+                </div>
+            </div>    
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="arrow">
+            <button class="arrow-up">
+                <a href="#countries">
+                <i class="fas fa-arrow-up"></i>
+                </a>
+            </button>
+        </div>
+    </footer>
+</div>
+    <script src="https://kit.fontawesome.com/ce3e7ed90f.js" crossorigin="anonymous"></script>
+    <script src="./countries.js"></script>
+    <script src="./declarations.js"></script>
+    <script src="./statistics.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
